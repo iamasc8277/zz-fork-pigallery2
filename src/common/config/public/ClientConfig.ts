@@ -733,7 +733,7 @@ export class NavBarSortingAndGroupingConfig {
     },
     description: $localize`Default sorting method for photo and video in a directory results.`
   })
-  defaultPhotoSortingMethod: ClientSortingConfig = new ClientSortingConfig(SortByTypes.Date, true);
+  defaultPhotoSortingMethod: ClientSortingConfig = new ClientSortingConfig(SortByTypes.Name, true);
 
   @ConfigProperty({
     type: ClientSortingConfig,
@@ -743,7 +743,7 @@ export class NavBarSortingAndGroupingConfig {
     },
     description: $localize`Default sorting method for photo and video in a search results.`
   })
-  defaultSearchSortingMethod: ClientSortingConfig = new ClientSortingConfig(SortByTypes.Date, false);
+  defaultSearchSortingMethod: ClientSortingConfig = new ClientSortingConfig(SortByTypes.Name, false);
 
   @ConfigProperty({
     type: ClientGroupingConfig,
@@ -754,7 +754,7 @@ export class NavBarSortingAndGroupingConfig {
     } as TAGS,
     description: $localize`Default grouping method for photo and video in a directory results.`
   })
-  defaultPhotoGroupingMethod: ClientGroupingConfig = new ClientGroupingConfig(GroupByTypes.Date, true);
+  defaultPhotoGroupingMethod: ClientGroupingConfig = new ClientGroupingConfig(GroupByTypes.Name, true);
 
   @ConfigProperty({
     type: ClientGroupingConfig,
@@ -765,7 +765,7 @@ export class NavBarSortingAndGroupingConfig {
     },
     description: $localize`Default grouping method for photo and video in a search results.`
   })
-  defaultSearchGroupingMethod: ClientGroupingConfig = new ClientGroupingConfig(GroupByTypes.Date, false);
+  defaultSearchGroupingMethod: ClientGroupingConfig = new ClientGroupingConfig(GroupByTypes.Name, false);
 
 }
 

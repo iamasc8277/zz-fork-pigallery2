@@ -205,7 +205,7 @@ export class GallerySortingService {
         }
 
       case SortByTypes.Name:
-        return (m: MediaDTO) => m.name.at(0).toUpperCase();
+        return (m: MediaDTO) => m.name.substring(0, 6);
 
       case SortByTypes.Rating:
         return (m: MediaDTO) => ((m as PhotoDTO).metadata.rating || 0).toString();
